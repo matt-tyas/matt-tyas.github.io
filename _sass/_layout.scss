@@ -15,6 +15,11 @@
         color: $grey-color-dark;
     }
 }
+@include media-query($on-palm) {
+    .site-title {
+        font-size: 31px;
+    }
+}
 
 // .site-nav {
 //     float: right;
