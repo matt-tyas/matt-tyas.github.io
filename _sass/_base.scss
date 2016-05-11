@@ -37,8 +37,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -81,10 +79,11 @@ li {
 /**
  * Headings
  */
-h1, h2 {
+
+h2 {
     font-weight: $base-font-weight;
 }
-h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     font-weight: $bold-font-weight;
 }
 
@@ -161,15 +160,15 @@ pre {
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    // margin-right: auto;
-    // margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        // max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }

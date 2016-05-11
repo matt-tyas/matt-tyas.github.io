@@ -7,7 +7,7 @@
 
 // Our variables
 $base-font-family: "nimbus-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   24px;
 $base-font-weight: 300;
 $bold-font-weight: 700;
 $small-font-size:  $base-font-size * 0.875;
@@ -15,7 +15,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #282828;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -24,12 +24,42 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1300px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// Vertical rhythm
+$base-spacing-unit: 60px !default;
+$three-quarter-spacing-unit: $base-spacing-unit / 4 * 3 !default; // 45px
+$half-spacing-unit: $base-spacing-unit / 2 !default; // 30px
+$quarter-spacing-unit: $half-spacing-unit / 2 !default; // 15px
+$sixth-spacing-unit: $base-spacing-unit / 6 !default; // 10px
 
+// Maximum IE version targetted by the generated stylesheet.
+$ie: 999 !default;
+
+// Grid settings
+$grid-gutter: $half-spacing-unit !default;
+$grid-screen-sizes: ("xsmall", "small", "medium", "large", "xlarge") !default; // Only classes listed here will be generated. These classes should follow the breakpoints given below.
+$grid-total-columns: 12 !default; // If less than 12 columns are required, setting this lower will reduce the amount of column width classes generated.
+$grid-include-center-classes: true !default; // If set to false, column centring classes (e.g. '.small-centered') will not be generated.
+$grid-include-pull-classes: true !default; // If set to false, column pull classes (e.g. '.small-pull-2') will not be generated.
+$grid-include-push-classes: true !default; // If set to false, column push classes (e.g. '.small-push-2') will not be generated.
+$grid-include-offset-classes: true !default; // If set to false, column offset classes (e.g. '.small-offset-4') will not be generated.
+
+// Breakpoints
+$breakpoints: (
+  xsmall: 320px,
+  small: 480px,
+  medium: 750px,
+  large: 960px,
+  xlarge: 1300px
+) !default; 
+
+// Viewport orientation
+$landscape: "only screen and (orientation: landscape)" !default;
+$portrait: "only screen and (orientation: portrait)" !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -38,17 +68,17 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
+        "grid",
         "syntax-highlighting"
 ;
