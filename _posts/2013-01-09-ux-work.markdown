@@ -1,0 +1,91 @@
+---
+author: mtyas-admin
+comments: false
+date: 2013-01-09 08:01:11+00:00
+layout: post
+link: http://matthewtyas.com/ux-work/
+slug: ux-work
+title: UX work
+wordpress_id: 763
+categories:
+- Prototyping
+- Sketches
+- UI
+- Work
+tags:
+- noteworthy
+---
+
+
+  
+
+
+    
+  * 
+![Prototype sketches image from above](http://matthewtyas.com/wp-content/uploads/2013/01/prototyping1.jpg)
+    
+
+    
+  * 
+![Prototype sketch image](http://matthewtyas.com/wp-content/uploads/2013/01/prototyping2.jpg)
+   
+
+    
+  * 
+     ![HTML Prototype print out image](http://matthewtyas.com/wp-content/uploads/2013/01/prototyping3.jpg)
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+### Recent prototyping
+
+
+
+
+
+Currently I am doing the UX work on a large web application for students at Leeds. The application will need to adapt to and size whilst also allowing the user to complete a wide range of tasks easily such as filling in forms or making bookings.
+
+
+
+
+
+#### Processes
+
+
+
+
+
+After digesting the client requirements I met with with key users to integrated their ideas into some initial sketches. These were then refined over a period of time with the client, users and with the feedback of my team. I then started to build a static HTML prototype to show user journeys through workflows and the basic user interaction. This was again refined by meeting various users and the clients.
+
+
+
+
+
+#### Technical
+
+
+
+
+
+I used a HTML and CSS preprocessor ([hammer](http://hammerformac.com/)) using SASS so I could quickly create a prototype that helped the clients understand how the app will work on different devices and how they will interact with the system to complete tasks.
+
+
+
+
+
+
+
+
+
+
+
+

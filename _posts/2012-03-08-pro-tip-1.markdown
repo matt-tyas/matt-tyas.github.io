@@ -1,0 +1,29 @@
+---
+author: mtyas-admin
+comments: false
+date: 2012-03-08 21:55:35+00:00
+layout: post
+link: http://matthewtyas.com/pro-tip-1/
+slug: pro-tip-1
+title: 'Pro Tip #1'
+wordpress_id: 450
+categories:
+- Blog
+tags:
+- fashion
+- Pro tips
+---
+
+Another new section I'm adding to the blog, my, 'Pro Tips'. Handy advice and homespun wisdom to help enrich your daily life. So with that in mind, my first pro tip.
+
+
+
+## Pro Tip #1: Fun Socks
+
+
+
+If you have an important meeting with the Shanghai Corporation or your boss and his wife are coming to dinner and you can feel a potentially difficult and stressful day coming on. Feel like a winner by donning some, 'Fun Socks', see figure 1 (below).
+
+[![20120308-214743.jpg](http://matthewtyas.com/wp-content/uploads/2012/03/20120308-214743.jpg)](http://matthewtyas.com/wp-content/uploads/2012/03/20120308-214743.jpg)
+
+They always help me perform!

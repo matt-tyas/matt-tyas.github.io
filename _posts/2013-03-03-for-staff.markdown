@@ -1,0 +1,88 @@
+---
+author: mtyas-admin
+comments: false
+date: 2013-03-03 13:36:42+00:00
+layout: post
+link: http://matthewtyas.com/for-staff/
+slug: for-staff
+title: For Staff
+wordpress_id: 854
+categories:
+- Build
+- Design
+- Work
+---
+
+
+  
+
+
+    
+  * 
+![forstaff home](http://matthewtyas.com/wp-content/uploads/2013/03/forstaff-1.jpg)
+    
+
+    
+  * 
+![forstaff archive](http://matthewtyas.com/wp-content/uploads/2013/03/forstaff-2.jpg)
+    
+
+    
+  * 
+![forstaff article](http://matthewtyas.com/wp-content/uploads/2013/03/forstaff-3.jpg)
+   
+
+  
+
+
+
+
+
+
+
+
+
+
+### Leeds University staff website
+
+
+
+
+
+The new signed off design for the Leeds University For Staff website.
+
+
+
+
+
+#### Processes
+
+
+
+
+
+Consultation with Staff and analysation of the analytics revealed that staff members found the old staff website, dull and it did not surface well enough the common links to systems they needed daily. As the For Staff website is the default homepage for all members of staff it is an important tool for communication and for navigating to the various systems staff need to use.
+
+
+
+
+
+#### Technical
+
+
+
+
+
+The site will employ a new combo search meaning users can search against the For Staff website, the staff and student databases and the main leeds.ac.uk site. This brings powerful searching capabilities currently in separate systems into one place. The site is to be built within the University's CMS system - Jadu.
+
+
+
+
+
+
+
+
+
+
+
+
