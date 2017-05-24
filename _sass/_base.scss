@@ -8,7 +8,12 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+// * {
+//   -webkit-transition: all 0.5s ease;
+//      -moz-transition: all 0.5s ease;
+//        -o-transition: all 0.5s ease;
+//           transition: all 0.5s ease;
+// }
 
 /**
  * Basic styling
@@ -23,6 +28,11 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    -webkit-transition: all 0.5s ease;
+         -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+
 }
 
 
@@ -75,20 +85,45 @@ li {
 }
 
 
-
 /**
  * Headings
  */
 
+.mt-type {
+ font-size: 84px;
+ line-height: 1.4;
+}
+
+.mt-type {
+  font-family: $bold-font-family;
+  margin-top: 84px;
+  margin-bottom: 84px;
+}
+
 @include media-query($on-palm) {
-    h1 {
-        font-size: 38px;
-        line-height: 1.3;
-    }
-    h2 {
-        font-size: 32px;
-        line-height: 1.3;
-    }
+  .mt-type {
+   font-size: 44px;
+   line-height: 1.3;
+  }
+
+  .mt-type {
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+}
+
+h1 {
+   margin-top: 20px;
+   margin-bottom: 0;
+   font-size: 42px;
+   color: #888;
+}
+
+@include media-query($on-palm) {
+  h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
 }
 
 h2 {
@@ -104,16 +139,13 @@ h1, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: #282828;
+    border-bottom: 0.1em solid #282828;
+    // background-color: #eceac1;
     text-decoration: none;
 
-    &:visited {
-        // color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: darken($brand-color, 15%);
-        text-decoration: underline;
+        border-bottom: 0;
     }
 }
 
@@ -192,16 +224,39 @@ pre {
 /**
  * Icons
  */
-.icon {
+// .icon {
+//
+//     > svg {
+//         display: inline-block;
+//         width: 16px;
+//         height: 16px;
+//         vertical-align: middle;
+//
+//         path {
+//             fill: $grey-color;
+//         }
+//     }
+// }
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+#interaction.is--active {
 
-        path {
-            fill: $grey-color;
-        }
+}
+.body.is--interaction {
+  background-color: #00B1E7;
+  h1, .mt-type {
+    color: #fff;
+  }
+  a {
+    color: #fff;
+    border-bottom: 0.1em solid #fff;
+    &:hover {
+
     }
+  }
+}
+.body.is--product {
+   background-color: red;
+   h1, .mt-type {
+      color: #282828;
+   }
 }

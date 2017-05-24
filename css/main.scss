@@ -6,7 +6,8 @@
 
 
 // Our variables
-$base-font-family: "nimbus-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "averta_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bold-font-family: "averta_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   24px;
 $base-font-weight: 300;
 $bold-font-weight: 700;
@@ -16,7 +17,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #282828;
-$background-color: #fdfdfd;
+$background-color: #f3f3f3;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -53,14 +54,18 @@ $breakpoints: (
   xsmall: 320px,
   small: 480px,
   medium: 750px,
-  large: 960px,
-  xlarge: 1300px
-) !default; 
+  large: 900px,
+  xlarge: 960px
+) !default;
 
 // Viewport orientation
 $landscape: "only screen and (orientation: landscape)" !default;
 $portrait: "only screen and (orientation: portrait)" !default;
 
+// .wrapper {
+//   padding-right: $spacing-unit * 2;
+//   padding-left: $spacing-unit * 2;
+// }
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -70,15 +75,16 @@ $portrait: "only screen and (orientation: portrait)" !default;
 // }
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "grid",
-        "syntax-highlighting"
+  "fonts",
+  "base",
+  "layout",
+  "grid",
+  "syntax-highlighting"
 ;

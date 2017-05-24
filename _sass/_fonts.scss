@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'averta_bold';
+  src: url('../assets/fonts/averta_bold.eot');
+  src: url('../assets/fonts/averta_bold.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/averta_bold.woff2') format('woff2'),
+       url('../assets/fonts/averta_bold.woff') format('woff'),
+       url('../assets/fonts/averta_bold.ttf') format('truetype'),
+       url('../assets/fonts/averta_bold.svg#nexa_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'averta_light';
+  src: url('../assets/fonts/averta_light.eot');
+  src: url('../assets/fonts/averta_light.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/averta_light.woff2') format('woff2'),
+       url('../assets/fonts/averta_light.woff') format('woff'),
+       url('../assets/fonts/averta_light.ttf') format('truetype'),
+       url('../assets/fonts/averta_light.svg#averta_light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
