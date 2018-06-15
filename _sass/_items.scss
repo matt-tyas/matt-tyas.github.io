@@ -1,0 +1,6 @@
+.mt-item {
+  padding: $base-spacing-unit/2;
+  @include media(large) {
+    padding: $base-spacing-unit;
+  }
+}

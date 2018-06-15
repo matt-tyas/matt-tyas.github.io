@@ -3,21 +3,19 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "averta_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $bold-font-family: "averta_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   24px;
 $base-font-weight: 300;
-$bold-font-weight: 700;
+$bold-font-weight: 900;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     76px;
 
 $text-color:       #282828;
-$background-color: #f3f3f3;
+$background-color: #FFFFFF; 
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -25,19 +23,17 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1300px;
-
-$on-palm:          600px;
+$content-width:    1400px;
 $on-laptop:        800px;
+$on-palm:          600px;
 
 // Vertical rhythm
-$base-spacing-unit: 60px !default;
-$three-quarter-spacing-unit: $base-spacing-unit / 4 * 3 !default; // 45px
-$half-spacing-unit: $base-spacing-unit / 2 !default; // 30px
-$quarter-spacing-unit: $half-spacing-unit / 2 !default; // 15px
-$sixth-spacing-unit: $base-spacing-unit / 6 !default; // 10px
+$base-spacing-unit: 76px !default;
+$three-quarter-spacing-unit: $base-spacing-unit / 4 * 3 !default;
+$half-spacing-unit: $base-spacing-unit / 2 !default;
+$quarter-spacing-unit: $half-spacing-unit / 2 !default;
+$sixth-spacing-unit: $base-spacing-unit / 6 !default;
 
-// Maximum IE version targetted by the generated stylesheet.
 $ie: 999 !default;
 
 // Grid settings
@@ -54,25 +50,31 @@ $breakpoints: (
   xsmall: 320px,
   small: 480px,
   medium: 750px,
-  large: 900px,
-  xlarge: 960px
+  large: 1000px,
+  xlarge: 1200px
 ) !default;
 
 // Viewport orientation
 $landscape: "only screen and (orientation: landscape)" !default;
 $portrait: "only screen and (orientation: portrait)" !default;
 
-// .wrapper {
-//   padding-right: $spacing-unit * 2;
-//   padding-left: $spacing-unit * 2;
-// }
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+@mixin media($size) {
+  @if $ie <= 8 {
+    @content;
+  }
+  @else {
+    @if map-has-key($breakpoints, $size) {
+      @media (min-width: #{map-get($breakpoints, $size)}) {
+        @content;
+      }
+    }
+    @else {
+      @media ($size) {
+        @content;
+      }
+    }
+  }
+}
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
@@ -84,7 +86,7 @@ $portrait: "only screen and (orientation: portrait)" !default;
 @import
   "fonts",
   "base",
+  "items",
   "layout",
-  "grid",
-  "syntax-highlighting"
+  "grid"
 ;
