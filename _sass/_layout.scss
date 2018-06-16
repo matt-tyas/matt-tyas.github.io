@@ -4,13 +4,16 @@
   background: rgba(240, 232, 229, 1.0);
   grid-column: span 12;
   overflow: hidden;
+
   @include media(medium) {
     overflow: visible;
   }
+
   @include media(large) {
     padding-left: $base-spacing-unit;
     overflow: visible;
   }
+  
   @include media(xlarge) {
     grid-column: span 5;
     padding-right: $base-spacing-unit*3;
@@ -21,8 +24,6 @@
     position: relative;
     top: 5px;
   }
-
-
 }
 
 .mt {
@@ -31,11 +32,13 @@
   width: 300px;
   left: 45%;
   top: 70%;
+
   @include media(medium) {
     width: 300px;
     left: 60%;
     top: $base-spacing-unit;
   }
+
   @include media(large) {
     width: 300px;
     left: 65%;
@@ -47,9 +50,11 @@
   padding-left: $base-spacing-unit/2;
   background: rgba(237, 217, 208, 1.0);
   grid-column: span 12;
+
   @include media(large) {
     padding-left: $base-spacing-unit;
   }
+
   @include media(xlarge) {
     grid-column: span 7;
     padding-left: $base-spacing-unit*3;
@@ -66,8 +71,8 @@
   z-index: 101;
   background: lighten(rgba(35, 70, 108, 1.0), 60%);
   grid-column: span 12;
-  //grid-row-start: 2;
   grid-row-end: span 2;
+
   @include media(large) {
     grid-column: span 5;
   }
@@ -84,6 +89,7 @@
   grid-template-rows: 171px;
   background: lighten(rgba(35, 70, 108, 1.0), 50%);
   grid-column: span 12;
+
   @include media(large) {
     grid-column: span 7;
   }
@@ -116,9 +122,11 @@
 
 .mt-project-grey {
   background: lighten(rgba(35, 70, 108, 1.0), 25%);
+
   p {
     color: #FFF;
   }
+
   h3 {
     color: #FFF;
   }
