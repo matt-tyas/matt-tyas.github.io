@@ -38,7 +38,7 @@
   }
   @include media(large) {
     width: 300px;
-    left: 60%;
+    left: 65%;
     top: $base-spacing-unit;
   }
 }
@@ -79,6 +79,8 @@
 
 .mt-project {
   @extend %grid;
+  position: relative;
+  z-index: 101;
   grid-template-rows: 171px;
   background: lighten(rgba(35, 70, 108, 1.0), 50%);
   grid-column: span 12;
