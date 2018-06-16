@@ -4,6 +4,9 @@
   background: rgba(240, 232, 229, 1.0);
   grid-column: span 12;
   overflow: hidden;
+  // h1, p, a {
+  //   color: #FFF;
+  // }
 
   @include media(medium) {
     overflow: visible;
@@ -13,7 +16,7 @@
     padding-left: $base-spacing-unit;
     overflow: visible;
   }
-  
+
   @include media(xlarge) {
     grid-column: span 5;
     padding-right: $base-spacing-unit*3;
@@ -32,6 +35,9 @@
   width: 300px;
   left: 45%;
   top: 70%;
+          transform:rotate(3deg);
+      -ms-transform:rotate(3deg);
+  -webkit-transform:rotate(3deg);
 
   @include media(medium) {
     width: 300px;
@@ -84,9 +90,10 @@
 
 .mt-project {
   @extend %grid;
+  height: auto;
   position: relative;
   z-index: 101;
-  grid-template-rows: 171px;
+  grid-template-columns: repeat(12, 1fr);
   background: lighten(rgba(35, 70, 108, 1.0), 50%);
   grid-column: span 12;
 
@@ -94,33 +101,76 @@
     grid-column: span 7;
   }
 
+}
+
+.mt-project__inner {
+  @extend %grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column: span 12;
+  min-height: 175px;
+  @include media(large) {
+    grid-column: span 12;
+  }
+
   p {
     color: #000;
-    grid-column: span 12;
+    grid-column: span 11;
     align-self: end;
   }
 
   h3 {
-    grid-column: span 12;
+    grid-column: span 11;
     align-self: end;
     color: #000;
   }
 }
 
 .mt-job-role-finest {
-  background: rgba(231, 231, 231, 1.0);
-}
+  background: rgba(234, 234, 234, 1.0);
 
-.mt-project-finest {
-  background: rgba(255, 255, 255, 1.0);
-
-  svg {
-    position: relative;
-    top: 20px;
+  img {
+    width: 240px;
   }
 }
 
-.mt-project-grey {
+.mt-project-finest {
+  position: relative;
+  padding: 0;
+  background: rgba(255, 255, 255, 1.0);
+
+  video {
+    max-width: 100%;
+    grid-column: span 12;
+  }
+
+  #play-pause,
+  #mute {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(40, 40, 40, 1.0);
+    padding: 20px;
+    border: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    @include media(medium) {
+      width: 100px;
+      padding: 30px 10px;
+    }
+  }
+
+  #mute {
+    left: 101px;
+  }
+}
+
+.mt-project-fnc {
+  padding: 0;
+  grid-template-rows: 1fr;
   background: lighten(rgba(35, 70, 108, 1.0), 25%);
 
   p {
@@ -129,5 +179,76 @@
 
   h3 {
     color: #FFF;
+  }
+}
+
+.mt-project-fnc__inner {
+  padding: $base-spacing-unit/2;
+  @extend %grid;
+  grid-template-rows: 1fr;
+  grid-column: span 11;
+
+  @include media(large) {
+    padding: $base-spacing-unit;
+  }
+}
+
+.mt-project-awards {
+  @extend %grid;
+  grid-template-rows: 3fr;
+  grid-column: span 1;
+}
+
+.mt-project-fnc__award {
+  display: inline-block;
+  padding: 10px;
+  background: red;
+  grid-column-start: 12;
+  grid-column-end: 12;
+  min-height: 75px;
+  color: #FFF;
+  line-height: 1.2;
+  font-size: 16px;
+
+  @include media(medium) {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+.mt-project-fnc__award--top {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background: rgba(35, 70, 108, 1.0);
+}
+
+.mt-project-fnc__award--middle {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: rgba(35, 70, 108, 0.8);
+}
+
+.mt-project-fnc__award--bottom {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background: rgba(35, 70, 108, 0.6);
+}
+
+.mt-blog {
+  grid-column: span 12;
+
+  @include media(medium) {
+    grid-column: span 8;
+  }
+}
+
+.mt-blog {
+
+  .mt-intro {
+    margin-bottom: $base-spacing-unit/2;
+  }
+  
+  h2 {
+    margin-bottom: $base-spacing-unit/2;
   }
 }

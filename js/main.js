@@ -1,40 +1,26 @@
-  // init controller
-	// var controller = new ScrollMagic.Controller();
-	//
-	// new ScrollMagic.Scene({
-	// 	triggerElement: "#interaction",
-	// 	triggerHook: 'onLeave',
-	// 	duration: 350
-	// })
-	// .setClassToggle(".body", "is--interaction")
-	// .addIndicators()
-	// .addTo(controller);
-	//
-	// new ScrollMagic.Scene({
-	// 	triggerElement: "#product",
-	// 	triggerHook: 'onLeave',
-	// 	duration: 250
-	// })
-	// .setClassToggle(".body", "is--product")
-	// .addIndicators()
-	// .addTo(controller);
+window.onload = function() {
 
+  // Video
+  var video = document.getElementById("video");
 
-	// new ScrollMagic.Scene({
-	// 	triggerElement: "#service",
-	// 	duration: 200,
-	// 	offset: 200
-	// })
-	// .setClassToggle("#service", "is--active")
-	// .removeClassToggle(true);
-	// .addIndicators()
-	// .addTo(controller);
-  //
-	// new ScrollMagic.Scene({
-	// 	triggerElement: "#service",
-	// 	duration: 200,
-	// 	offset: 200
-	// })
-	// .setClassToggle(".body", "is--service")
-	// .removeClassToggle(true);
-	// .addTo(controller);
+  // Buttons
+  var playButton = document.getElementById("play-pause");
+
+  // Event listener for the play/pause button
+  playButton.addEventListener("click", function() {
+    if (video.paused == true) {
+      // Play the video
+      video.play();
+
+      // Update the button text to 'Pause'
+      playButton.innerHTML = "pause";
+    } else {
+      // Pause the video
+      video.pause();
+
+      // Update the button text to 'Play'
+      playButton.innerHTML = "play";
+    }
+  });
+
+}
